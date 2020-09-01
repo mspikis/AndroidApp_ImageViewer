@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="uk.ac.kent.mss37.imageviewer.AboutActivity">
+
+    <TextView
+        android:id="@+id/aboutHead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="About this App"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/authorTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="Author:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/aboutHead" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="181dp"
+        android:layout_height="22dp"
+        android:layout_marginLeft="8dp"
+        android:text="Michail Skalistiris Pikis"
+        app:layout_constraintBaseline_toBaselineOf="@+id/authorTxt"
+        app:layout_constraintLeft_toRightOf="@+id/authorTxt" />
+
+    <TextView
+        android:id="@+id/available"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Available for:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/authorTxt" />
+
+    <TextView
+        android:id="@+id/androidV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="Android Lollipop (5.1) +"
+        app:layout_constraintBaseline_toBaselineOf="@+id/available"
+        app:layout_constraintLeft_toRightOf="@+id/available" />
+
+    <TextView
+        android:id="@+id/submissionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Submission Date:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/available" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="22/12/2017"
+        app:layout_constraintBaseline_toBaselineOf="@+id/submissionDate"
+        app:layout_constraintLeft_toRightOf="@+id/submissionDate"
+        android:layout_marginLeft="8dp" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="Version:"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/submissionDate" />
+
+    <TextView
+        android:id="@+id/versionNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="1"
+        app:layout_constraintBaseline_toBaselineOf="@+id/version"
+        app:layout_constraintLeft_toRightOf="@+id/version" />
+</android.support.constraint.ConstraintLayout>
